@@ -1,0 +1,86 @@
+/* src/styles/nav.module.css */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgb(0,0,36);
+    background: linear-gradient(90deg, rgba(0,0,36,1) 0%, rgba(25,2,53,1) 7%, rgba(9,9,121,1) 42%, rgba(0,255,252,1) 91%, rgba(0,241,255,0.6392682072829132) 100%);
+    padding-bottom: 30px;
+  }
+  
+  .Logoimg {
+    flex: 1;
+    
+  }
+  
+  .Logo {
+    width: 80px;
+    height: auto;
+  }
+  
+.Navbar {
+    flex: 2;
+  }
+
+.Navbar a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    transition: 1s;
+  }
+  .navbar a:hover{
+    transform: scale(2);
+  }
+  .hamburger {
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: transform 0.3s ease;
+}
+
+/* Show the hamburger icon and hide the nav-links on smaller screens */
+@media (max-width: 768px) {
+  .Navbar {
+    display: none; 
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .Navbar.active {
+    display: flex; 
+    max-height: 100vh; 
+    top: 0;
+    padding-top: 60px;
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    color: black;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+  }
+
+  .hamburger {
+    display: flex; 
+  }
+}

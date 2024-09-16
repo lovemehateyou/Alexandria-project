@@ -1,0 +1,233 @@
+.about_intro{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    text-align: center;
+}
+.about_intro h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+.about_intro h3{
+    font-size: 25px;
+    margin: 10px 0;
+}
+.about_intro p{
+    text-align: left;
+    color: #777;
+    font-size: 16px;
+}
+.about_future{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    text-align: center;
+}
+.about_future h1{
+    font-size: 36px;
+    margin: 10px 0;
+}
+.about_future p {
+    text-align: left;
+    color: #777;
+    font-size: 16px;
+}
+
+
+.logo_design_section {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .image_placeholder img {
+    width: 100%;
+    height: auto;
+    max-width: 5%px;
+    background-color: #ddd;
+    object-fit: cover;
+  }
+  
+  .text_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 500px;
+  }
+
+  .text_content h1 {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+  }
+  
+  .text_content p {
+    font-size: 16px;
+    margin: 0 0 30px 0;
+    color: #333;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .learn_more,
+  .get_started {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .learn_more:hover,
+  .get_started:hover {
+    background: #e0e0e0;
+  }
+
+  /*another section*/
+
+  .web_solutions_section {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .text_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+  }
+  
+  .expertise_label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+    
+  }
+  
+  .text_content h1 {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    color: #333;
+  }
+  
+  .features_list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  
+  .features_list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .learn_more{
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .learn_more:hover{
+    background: #e0e0e0;
+  }
+  
+  .image_placeholder img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    background-color: #ddd;
+    object-fit: cover;
+  }
+
+  .employee_section h1 {
+    font-size: 36px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .individuals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .person img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for centering the last two items */
+  .individuals > .person:nth-child(4),
+  .individuals > .person:nth-child(5) {
+    grid-column: span 3; /* Span all columns to make it easier to center */
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  @media (max-width: 1024px){
+    
+    .image_placeholder img{
+        display: none;
+    }
+    .individuals {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+      }
+      
+      .individuals > .person:nth-child(4),
+      .individuals > .person:nth-child(5) {
+        grid-column: span 2; /* Adjust for smaller screens */
+      }
+  }
+
+  @media (max-width: 600px){
+    .image_placeholder img{
+        display: none;
+    }
+
+    .individuals {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
+      }
+    
+      .individuals > .person:nth-child(4),
+      .individuals > .person:nth-child(5) {
+        grid-column: span 1; /* Stack normally on very small screens */
+      }
+  }

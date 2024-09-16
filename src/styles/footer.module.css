@@ -1,0 +1,132 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer_left {
+    max-width: 400px;
+  }
+  
+  .logo {
+    font-family: 'Cursive', sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter_text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .email_input {
+    padding: 10px;
+    border: 1px solid #000;
+    flex: 1;
+    border-radius: 10px;
+  }
+  
+  .subscribe_button {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .subscribe_button:hover{
+    opacity: 0.8;
+  }
+  
+  .privacy_text {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  .footer_columns {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .column {
+    list-style: none;
+  }
+  
+  .column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .column ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .column li {
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  .social ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .social li {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 20px; /* Reduce padding for smaller screens */
+    }
+  
+    .footer_left,
+    .footer_columns {
+      flex: 1 1 100%; /* Full width on smaller screens */
+    }
+  
+    .newsletter {
+      flex-direction: column; /* Stack input and button */
+    }
+  
+    .subscribe_button {
+      width: 50%; /* Full width button */
+    }
+    .email_input{
+        width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 28px; /* Adjust logo size for very small screens */
+    }
+  
+    .newsletter_text {
+      font-size: 14px;
+    }
+  
+    .privacy_text {
+      font-size: 10px;
+    }
+  
+    .column h3 {
+      font-size: 16px; /* Smaller column headers */
+    }
+  
+    .column li {
+      font-size: 14px; /* Adjust list item size */
+    }
+  }

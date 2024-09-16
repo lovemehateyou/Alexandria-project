@@ -1,0 +1,684 @@
+.hero{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 10px;
+    background: rgb(0,0,36);
+    background: linear-gradient(90deg, rgba(0,0,36,1) 0%, rgba(25,2,53,1) 7%, rgba(9,9,121,1) 42%, rgba(0,255,252,1) 91%, rgba(0,241,255,0.6392682072829132) 100%);
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 70px;
+    }
+    
+    .img_dis {
+        flex: 1; 
+        max-width: 50%;
+        width: 100%;
+        height: 100%;
+        animation: scale-up-center 1s ease-in-out forwards;
+    }
+    
+    
+    .hero_dis {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 50%;
+        width: 100%;
+        height: 100vh;
+        animation: slide-right 1s ease-in-out forwards;
+    }
+    
+    .hero_dis h1{
+        font-size: 3rem;
+        margin: 5px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .hero_dis p{
+        font-size: 1rem;
+        margin: 5px;
+        color: white;
+        margin-bottom:30px;
+        
+    }
+    .hero_dis button {
+        display: inline-block;
+        background: transparent; 
+        color: white; 
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3); 
+        cursor: pointer;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 1s; 
+        margin-right: 10px;
+    
+        backdrop-filter: blur(10px); 
+        -webkit-backdrop-filter: blur(10px); 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); 
+    }
+    
+    .hero_dis button:hover {
+        background: rgba(255, 255, 255, 0.3); 
+        color: white;
+        transform: scale(1.05);
+    }
+    
+    /*Animations*/
+    @keyframes slide-right {
+        0% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+            opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(50px);
+                  transform: translateX(50px);
+            opacity: 1;
+        }
+      }
+    
+      @keyframes scale-up-center {
+        0% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+
+      .section1{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px 10px;
+        text-align: center;
+
+      }
+      
+      .showcase_header {
+        margin-bottom: 40px;
+      }
+
+      .showcase_header h1{
+        font-size: 36px;
+        margin: 10px 0;
+      }
+
+      .showcase_header p{
+        color: #777;
+        font-size: 16px;
+      }
+
+      .showcase_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .showcase_item{
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        
+      }
+      .showcase_item:hover{
+        transform: scale(1.05);
+
+      }
+      @keyframes apper {
+        from {
+          opacity: 0; 
+          
+        }
+        to {
+            opacity: 1;
+        }
+      }
+      .showcase_img{
+        height: fit-content;
+        background-color: #e0e0e0;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+     
+
+      .showcase_item_title{
+        font-size: 18px;
+        margin-top: 15px;
+        font-weight: bold;  
+      }
+      .showcase_item_title:hover{
+        color: #fff;
+      }
+        
+      .showcase_item_desc{
+        color: #555;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+      .showcase_item_desc:hover{
+        color: #fff;
+      }
+
+      /*Slideshow*/
+
+      .showslide_grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        
+      }
+
+      .showslide_item{
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden; 
+        transition: transform 0.3s ease;
+        animation: slide-loop 2s linear forwards;
+      }
+      
+     @keyframes slide-loop {
+        0% {
+          
+          transform: translateX(100%);
+          
+        }
+        100% {
+            transform: translateX(0%);
+        }
+        
+    }
+      .showslide_img{
+        height: fit-content;
+        background-color: #e0e0e0;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        overflow: hidden;
+      }
+
+      .showslide_img img {
+        width: 100%;
+        height: auto;
+        border-radius: 19px;
+      } 
+
+      .showslide_item_title{
+        font-size: 18px;
+        margin-top: 15px;
+        font-weight: bold;  
+      }
+
+      .showslide_item_desc{
+        color: #555;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .lightbox {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Make sure it sits above other content */
+      }
+      
+      .lightbox_image {
+        max-width: 90%;
+        max-height: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s;
+      }
+      
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+      }
+      
+      /* DesignWorkflow */
+
+      .workflow_container {
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+      
+      
+      .workflow_title {
+        font-size: 2.5rem;
+        
+        margin: 0.5rem 0;
+      }
+      
+      .workflow_description {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 2rem;
+      }
+      
+      .workflow_steps {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      
+      .workflow_step {
+        flex: 1;
+        text-align: left;
+        overflow: hidden;
+      }
+      
+      .workflow_icon {
+        
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+      }
+      
+      .workflow_step h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      
+      .workflow_step p {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.5;
+      }
+
+      /* TransformingDesign */
+
+      .design_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .design_left {
+        flex: 1;
+      }
+      
+      .design_right {
+        flex: 1;
+        text-align: left;
+      }
+      
+      .design_title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 0;
+        line-height: 1.2;
+      }
+      
+      .design_description {
+        margin: 1rem 0 2rem;
+        font-size: 1rem;
+        color: #666;
+      }
+      
+      .design_buttons {
+        display: flex;
+        gap: 1rem;
+      }
+      
+
+      .design_buttons button {
+        padding: 0.75rem 1.5rem;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+      }
+      
+      .contact_button {
+        background-color: #000;
+        color: #fff;
+        border-radius: 10px;
+        transition: 1s;
+      }
+      
+      .learn_button {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+      }
+      
+      .contact_button:hover,
+      .learn-button:hover {
+        opacity: 0.8;
+      }
+      
+      /* HappyClients */
+      
+      .clients_container {
+        text-align: center;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .clients_title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      
+      .clients_subtitle {
+        margin-bottom: 2rem;
+        color: #666;
+      }
+      
+      .testimonials {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      
+      .testimonial_card {
+        background-color: #fff;
+        padding: 1.5rem;
+        border: 1px solid #e0e0e0;
+        flex: 1;
+        text-align: left;
+      }
+      
+      .stars {
+        font-size: 1.25rem;
+        color: #fbb034;
+      }
+      
+      .feedback {
+        font-weight: 600;
+        margin: 1rem 0;
+      }
+      
+      .client_info {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      
+      .client_avatar img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+      }
+      
+      .client_details {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .client_name {
+        font-weight: 700;
+      }
+      
+      .client_position {
+        font-size: 0.875rem;
+        color: #666;
+      }
+      
+      /*extra Detail*/
+
+      .logo_design_section {
+        display: flex;
+        gap: 40px;
+        padding: 40px;
+        background-color: white;
+        font-family: Arial, sans-serif;
+      }
+      
+      .image_placeholder img {
+        width: 100%;
+        height: auto;
+        max-width: 5%px;
+        background-color: #ddd;
+        object-fit: cover;
+      }
+      
+      .text_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 500px;
+      }
+ 
+      .text_content h1 {
+        font-size: 32px;
+        margin: 0 0 20px 0;
+        font-weight: bold;
+      }
+      
+      .text_content p {
+        font-size: 16px;
+        margin: 0 0 30px 0;
+        color: #333;
+      }
+      
+      .buttons {
+        display: flex;
+        gap: 10px;
+      }
+      
+      .learn_more,
+      .get_started {
+        padding: 10px 20px;
+        border: 1px solid #000;
+        background: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.3s ease;
+      }
+      
+      .learn_more:hover,
+      .get_started:hover {
+        background: #e0e0e0;
+      }
+
+      /*another section*/
+
+      .web_solutions_section {
+        display: flex;
+        gap: 40px;
+        padding: 40px;
+        background-color: white;
+        font-family: Arial, sans-serif;
+      }
+      
+      .text_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 600px;
+      }
+      
+      .expertise_label {
+        font-size: 14px;
+        font-weight: bold;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      
+      .text_content h1 {
+        font-size: 32px;
+        margin: 0 0 20px 0;
+        font-weight: bold;
+      }
+      
+      .description {
+        font-size: 16px;
+        margin: 0 0 20px 0;
+        color: #333;
+      }
+      
+      .features_list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 30px 0;
+      }
+      
+      .features_list li {
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .buttons {
+        display: flex;
+        gap: 10px;
+      }
+      
+      .learn_more{
+        padding: 10px 20px;
+        border: 1px solid #000;
+        background: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.3s ease;
+      }
+      
+      .learn_more:hover{
+        background: #e0e0e0;
+      }
+      
+      .image_placeholder img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        background-color: #ddd;
+        object-fit: cover;
+      }
+      
+      
+
+      /*resizing Css*/
+      @media (max-width: 1024px) {
+        .hero {
+            flex-direction: column;
+            justify-content: center;
+            height: 125vh;
+            
+        }
+    
+        .img_dis {
+            max-width: 100%;
+            height: 50vh; 
+            margin-top: 20px;
+        }
+    
+        .hero_dis {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            text-align: center;
+            align-items: center;
+        }
+    
+        .hero_dis h1 {
+            font-size: 2rem;
+            margin-right: 40px;
+        }
+    
+        .hero_dis p {
+            font-size: 1rem;
+        }
+        .showslide_grid{
+          display: block;
+          animation: none;
+        }
+        .showslide_item{
+          animation: none;
+        }
+        .image_placeholder img{
+          display: none;
+        }
+        .testimonials{
+          display: block;
+        }
+        .workflow_steps {
+          display: block;
+         ;
+        }
+    }
+    
+    /* For mobile devices */
+    @media (max-width: 600px) {
+       
+        .hero {
+            flex-direction: column;
+            width: 50%;
+            height: 100vh;
+        }
+    
+        .img_dis {
+            max-width: 100%;
+            height: 40vh; 
+            margin-top: 20px;
+        }
+    
+        .hero_dis h1 {
+            font-size: 1rem;
+        }
+    
+        .hero_dis p {
+            font-size: 0.9rem;
+        }
+    
+        .hero_dis button {
+            padding: 0.8rem 1.5rem;
+            font-size: 0.9rem;
+        }
+        .showslide_grid{
+          display: block;
+          animation: none;
+        }
+        .image_placeholder img{
+          display: block;
+        }
+        .testimonials{
+          display: block;
+        }
+        .workflow_steps {
+          display: block;
+        }
+    }
