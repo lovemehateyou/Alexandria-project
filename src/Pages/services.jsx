@@ -4,7 +4,7 @@ import logo from '../assets/Free Vector _ Portfolio update concept illustration.
 import logo2 from '../assets/Web Development Illustration Design Assets - Free in SVG, PNG, BLEND, GIF _ IconScout.jpg'
 import logo3 from '../assets/Creativity Customizable Semi Flat Illustrations _ Pana Style.jpg'
 import logo4 from '../assets/Free Vector _ App development illustration.jpg'
-import logo5 from '../assets/Free Vector _ Digital marketing team with laptops and light bulb_ marketing team metrics, marketing team lead and responsibilities concept on white background_.jpg'
+import logo5 from '../assets/digital marketing.jpg'
 import logo6 from '../assets/SaaS, software as service concept by vectorpointstudio on @creativemarket.jpg'
 
 import styles from '../styles/service.module.css'
