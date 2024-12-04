@@ -11,9 +11,9 @@ const toggleMenu = ()=>{
 }
   return (
     <header className={styles.header}>
-     {/*  <div className={styles.Logoimg}>
+     {/*   <div className={styles.Logoimg}>
         { <img src={Logo} className={styles.Logo}/>}
-      </div> */}
+      </div>  */}
 
        {/* Hamburger Icon for Mobile */}
 

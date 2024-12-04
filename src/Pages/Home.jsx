@@ -13,7 +13,7 @@ import proj2 from '../assets/logo alex.jpg'
 import proj3 from '../assets/Modern Restaurant Flyer Template Design _ EPS Free Download - Pikbest.jpg'
 import proj4 from '../assets/99 Inspirational Website Design Templates - DesignerPeople.jpg'
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 
 function Home() {
   const navigate = useNavigate()
@@ -41,6 +41,16 @@ function Home() {
       image:client3
     },
   ];
+    const [loading, setLoading] = useState(true);
+    // Handle iframe load event
+    const handleIframeLoad = () => {
+      setLoading(false); // Stop showing the loader
+    };
+
+    useEffect(() => {
+      setLoading(true); // 
+    }, []);
+  
 
   const [lightboxVisible, setLightboxVisible] = useState(false);
     const [selectedImage, setSelectedImage] = useState('');
@@ -60,6 +70,12 @@ function Home() {
 
   return (
     <>
+    {loading && (
+        <div id="loader">
+          <div className="spinner"></div>
+        </div>
+      )}
+
       <div className={styles.hero}>
       <div className={styles.hero_dis}>
             <h1>Unlock Your Brand's Potential with Alexandra</h1>
@@ -74,7 +90,7 @@ function Home() {
 
         </div>
         <div className={styles.img_dis}>
-            <iframe src='https://my.spline.design/clonercubesimplecopy-be0421b64854319b3d82944c03a972e4/' frameborder='0' width='100%' height='100%'></iframe>
+            <iframe src='https://my.spline.design/clonercubesimplecopy-be0421b64854319b3d82944c03a972e4/' frameBorder='0' width='100%' height='100%' onLoad={handleIframeLoad}></iframe>
         </div>
     </div>
 

@@ -161,19 +161,17 @@
       .showcase_item_title{
         font-size: 18px;
         margin-top: 15px;
-        font-weight: bold;  
+        font-weight: bold; 
+        cursor: pointer; 
       }
       .showcase_item_title:hover{
-        color: #fff;
+        color: blue;
       }
         
       .showcase_item_desc{
         color: #555;
         font-size: 14px;
         margin-top: 10px;
-      }
-      .showcase_item_desc:hover{
-        color: #fff;
       }
 
       /*Slideshow*/
@@ -182,6 +180,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
+        cursor: pointer;
         
       }
 
@@ -621,6 +620,9 @@
     
         .hero_dis p {
             font-size: 1rem;
+        }
+        .showcase_grid{
+          display: block;
         }
         .showslide_grid{
           display: block;

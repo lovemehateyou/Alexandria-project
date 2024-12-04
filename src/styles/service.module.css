@@ -1,17 +1,17 @@
 .intro_section{
     display: flex;
     justify-content: space-between;
-    
     gap: 10px;
-    height: auto;
+    height: 450px;
     width: 100%;
 }
 
 .img_service{
     flex: 1; 
     max-width: 40%;
-    width: 100%;
-    height: 100%;
+   
+    width: 200px;
+    height: 200px;
 }
 
 .info_services{
@@ -53,6 +53,7 @@
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); 
+    margin-left: 10px;
 }
 .info_services button:hover{
     background: rgba(255, 255, 255, 0.3); 
