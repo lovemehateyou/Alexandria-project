@@ -648,8 +648,7 @@
        
         .hero {
             flex-direction: column;
-            width: 50%;
-            height: 100vh;
+
         }
     
         .img_dis {
@@ -683,4 +682,14 @@
         .workflow_steps {
           display: block;
         }
+        .design_container{
+          flex-direction: column;
+        }
+        .logo_design_section{
+          flex-direction: column;
+        }
+        .web_solutions_section{
+          flex-direction: column;
+        }
+        
     }
