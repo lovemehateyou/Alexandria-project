@@ -1,4 +1,4 @@
-.hero{
+ .hero{
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
@@ -595,8 +595,7 @@
         .hero {
             flex-direction: column;
             justify-content: center;
-            height: 125vh;
-            
+            align-items: center;   
         }
     
         .img_dis {
@@ -607,19 +606,19 @@
     
         .hero_dis {
             max-width: 100%;
-            width: auto;
+            width: 50%;
             height: auto;
             text-align: center;
             align-items: center;
         }
     
         .hero_dis h1 {
-            font-size: 2rem;
-            margin-right: 40px;
+            font-size: 6rem;
+            margin-right: 10px;
         }
     
         .hero_dis p {
-            font-size: 1rem;
+            font-size: 4rem;
         }
         .showcase_grid{
           display: block;
@@ -644,30 +643,35 @@
     }
     
     /* For mobile devices */
-    @media (max-width: 600px) {
+    @media (max-width: 780px) {
        
         .hero {
             flex-direction: column;
-
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         }
     
         .img_dis {
-            max-width: 100%;
-            height: 40vh; 
-            margin-top: 20px;
+            display: none;
+        }
+        .hero_dis{
+          width:60%;
+          height: auto;
         }
     
         .hero_dis h1 {
-            font-size: 1rem;
+            font-size: 2rem;
         }
     
         .hero_dis p {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
     
         .hero_dis button {
             padding: 0.8rem 1.5rem;
             font-size: 0.9rem;
+            margin-bottom: 10px;
         }
         .showslide_grid{
           display: block;
@@ -692,4 +696,13 @@
           flex-direction: column;
         }
         
+    }
+
+    @media(max-width:376px){
+      body{
+        overflow-x: hidden;
+      }
+        .hero{
+          height: fit-content;
+        }
     }

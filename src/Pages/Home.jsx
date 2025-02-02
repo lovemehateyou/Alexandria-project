@@ -82,13 +82,14 @@ function Home() {
             <p>
             At Alexandra, we specialize in creating stunning logos, developing powerful websites, and bringing your ideas to life with captivating animations.
             </p>
+
           <span>
           <button onClick={()=>navigate('/contact')}> Contact Us </button>
           <button onClick={()=>navigate('/About')}>Learn More</button>
           </span>
             
-
         </div>
+        
         <div className={styles.img_dis}>
             <iframe src='https://my.spline.design/clonercubesimplecopy-be0421b64854319b3d82944c03a972e4/' frameBorder='0' width='100%' height='100%' onLoad={handleIframeLoad}></iframe>
         </div>
