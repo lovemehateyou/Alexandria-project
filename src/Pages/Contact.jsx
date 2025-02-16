@@ -55,6 +55,7 @@ function Contact() {
     <div className={styles.contact_img}>
       <img src ={image}/>
     </div>
+    
     <form className={styles.contact_form} onSubmit={handleSubmit}>
       <div className={styles.form_group}>
         <label htmlFor="name">Name</label>
